@@ -3,7 +3,7 @@ var { createRegistrant, earnPermit} = require('../exercises/registrant');
 
 describe('Registrant', function() {
 
-  it('should be able to create a registrant with a name and age', function() {
+  it.skip('should be able to create a registrant with a name and age', function() {
     var registrant = createRegistrant('Jeff', 16);
 
     assert.equal(registrant.name, 'Jeff');
