@@ -1,0 +1,6 @@
+
+
+module.exports = {
+  createRegistrant, 
+  // earnPermit
+}
