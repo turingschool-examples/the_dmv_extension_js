@@ -7,7 +7,7 @@ You've built it in Ruby -- now let's take a look at what some of these objects w
 1. Fork and clone this repo.
 2. Type `cd the_dmv_extension_js` to move into the root directory
 3. Run `npm install`
-4. Test that the unit tests are working by running the command `npm test dmv/test/registrant-test.js` in your terminal
+4. Test that the unit tests are working by running the command `npm test dmv/test/registrant_test.js` in your terminal
 
 You should see something like:
 
