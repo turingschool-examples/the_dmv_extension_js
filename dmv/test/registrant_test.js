@@ -14,7 +14,7 @@ describe('Registrant', function() {
     var registrant = createRegistrant('Louisa', 24);
 
     assert.equal(registrant.name, 'Louisa');
-    assert.equal(registrant.age, 'Louisa', 24);
+    assert.equal(registrant.age, 24);
   });
 
   it.skip('should default registrants to not having a permit', function() {
@@ -33,18 +33,18 @@ describe('Registrant', function() {
   it.skip('should by default have license data', function() {
     var registrant = createRegistrant('Saphira', 18, true);
 
-    assert.equal(registrant.licenseData, {written: false, license: false, renewed: false});
+    assert.deepEqual(registrant.licenseData, {written: false, license: false, renewed: false});
     assert.equal(registrant.licenseData.written, false);
     assert.equal(registrant.licenseData.license, false);
     assert.equal(registrant.licenseData.renewed, false);
   });
 
   it.skip('should be able to earn a permit', function() {
-    var registrant = createRegistrant('Saphira', 18, true);
+    var registrant = createRegistrant('Saphira', 18, false);
 
     assert.equal(registrant.permit, false);
 
-    registrant.earnPermit;
+    earnPermit(registrant)
     
     assert.equal(registrant.permit, true);
   });
