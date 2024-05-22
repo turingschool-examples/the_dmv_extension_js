@@ -2,5 +2,6 @@
 
 module.exports = {
   // createRegistrant,
-  // earnPermit
+  // earnPermit,
+  // takeLicenseExam
 }
