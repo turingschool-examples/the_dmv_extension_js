@@ -25,13 +25,13 @@ describe('Registrant', function() {
   });
 
   it.skip('should set permit based on what argument is passed in', function() {
-    var registrant = createRegistrant('Saphira', 18, true);
+    var registrant = createRegistrant('Anita', 18, true);
 
     assert.equal(registrant.permit, true);
   });
 
   it.skip('should by default have license data', function() {
-    var registrant = createRegistrant('Saphira', 18, true);
+    var registrant = createRegistrant('Anita', 18, true);
 
     assert.deepEqual(registrant.licenseData, {written: false, license: false, renewed: false});
     assert.equal(registrant.licenseData.written, false);
@@ -39,13 +39,27 @@ describe('Registrant', function() {
     assert.equal(registrant.licenseData.renewed, false);
   });
 
-  it.skip('should be able to earn a permit', function() {
-    var registrant = createRegistrant('Saphira', 18, false);
+  it.skip('should be able to earn a permit if over 16', function() {
+    var registrant = createRegistrant('Anita', 18, false);
 
-    assert.equal(registrant.permit, false);
+    assert.equal(earnPermit(registrant), 'You have successfully earned a permit!');
+  });
 
-    earnPermit(registrant)
-    
-    assert.equal(registrant.permit, true);
+  it.skip('should not be able to earn a permit if under 16', function() {
+    var registrant = createRegistrant('Anita', 10, false);
+
+    assert.equal(earnPermit(registrant), 'Sorry, you are not able to earn a permit right now.');
+  });
+
+  it.skip('should be able to take a license exam because they have earned a permit', function() {
+    var registrant = createRegistrant('Anita', 18, true);
+
+    assert.equal(takeLicenseExam(registrant), 'Great job! You can take your test.');
+  });
+
+  it.skip('should not be able to take a license exam without a permit', function() {
+    var registrant = createRegistrant('Anita', 18, false);
+
+    assert.equal(takeLicenseExam(registrant), 'Sorry, you need to earn a permit first.');
   });
 });
