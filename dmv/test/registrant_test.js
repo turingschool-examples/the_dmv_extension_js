@@ -1,5 +1,5 @@
 var assert = require('chai').assert;
-var { createRegistrant, earnPermit} = require('../exercises/registrant');
+var { createRegistrant, earnPermit, takeLicenseExam} = require('../exercises/registrant');
 
 describe('Registrant', function() {
 
