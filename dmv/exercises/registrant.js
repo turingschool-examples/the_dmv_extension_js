@@ -1,8 +1,9 @@
 
-function createRegistrant(name, age) {
+function createRegistrant(name, age, permit) {
   return {
     name: name,
-    age: age
+    age: age,
+    permit: false
   }
 }
 

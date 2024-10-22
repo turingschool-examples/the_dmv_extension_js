@@ -17,7 +17,7 @@ describe('Registrant', function() {
     assert.equal(registrant.age, 24);
   });
 
-  it.skip('should default registrants to not having a permit', function() {
+  it('should default registrants to not having a permit', function() {
     var registrant = createRegistrant('Louisa', 24);
 
     assert.equal(registrant.permit, false);
