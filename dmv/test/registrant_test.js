@@ -24,7 +24,7 @@ describe('Registrant', function() {
 
   });
 
-  it.skip('should set permit based on what argument is passed in', function() {
+  it('should set permit based on what argument is passed in', function() {
     var registrant = createRegistrant('Anita', 18, true);
 
     assert.equal(registrant.permit, true);
