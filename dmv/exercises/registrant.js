@@ -4,6 +4,7 @@ function createRegistrant(name, age, permit = false) {
     name: name,
     age: age,
     permit: permit
+    test
   }
 }
 
