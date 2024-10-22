@@ -10,7 +10,7 @@ describe('Registrant', function() {
     assert.equal(registrant.age, 16);
   });
 
-  it.skip('should be able to have a different name and age', function() {
+  it('should be able to have a different name and age', function() {
     var registrant = createRegistrant('Louisa', 24);
 
     assert.equal(registrant.name, 'Louisa');
