@@ -45,7 +45,7 @@ describe("Registrant", function () {
     assert.equal(registrant.licenseData.renewed, false);
   });
 
-  it.skip("should be able to earn a permit if 16 or older", function () {
+  it("should be able to earn a permit if 16 or older", function () {
     var registrant = new createRegistrant("Anita", 18, false);
 
     assert.equal(
