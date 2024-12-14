@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 var assert = require("chai").assert;
 var {
   createRegistrant,
