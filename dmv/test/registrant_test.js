@@ -63,7 +63,7 @@ describe("Registrant", function () {
     );
   });
 
-  it.skip("should be able to take a license exam because they have earned a permit", function () {
+  it("should be able to take a license exam because they have earned a permit", function () {
     var registrant = new createRegistrant("Anita", 18, true);
 
     assert.equal(
@@ -72,7 +72,7 @@ describe("Registrant", function () {
     );
   });
 
-  it.skip("should not be able to take a license exam without a permit", function () {
+  it("should not be able to take a license exam without a permit", function () {
     var registrant = new createRegistrant("Anita", 18, false);
 
     assert.equal(
