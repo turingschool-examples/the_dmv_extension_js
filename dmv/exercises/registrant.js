@@ -19,8 +19,17 @@ function earnPermit(registrantParameter) {
     return "Sorry, you are not able to earn a permit right now.";
   }
 }
+
+function takeLicenseExam(registrantParameter) {
+  if (registrantParameter.permit) {
+    registrantParameter.licenseData.written = true;
+    return "Great job! You can take your test.";
+  } else {
+    return "Sorry, you need to earn a permit first.";
+  }
+}
 module.exports = {
   createRegistrant,
   earnPermit,
-  // takeLicenseExam
+  takeLicenseExam,
 };
