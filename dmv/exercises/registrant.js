@@ -5,6 +5,11 @@ class createRegistrant {
     this.name = nameParameter
     this.age = ageParameter
     this.permit = permitParameter
+    this.licenseData = {
+      written: false,
+      license: false,
+      renewed: false,
+    };
   }
 }
 module.exports = {
