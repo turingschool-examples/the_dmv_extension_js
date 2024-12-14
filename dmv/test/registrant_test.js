@@ -54,7 +54,7 @@ describe("Registrant", function () {
     );
   });
 
-  it.skip("should not be able to earn a permit if under 16", function () {
+  it("should not be able to earn a permit if under 16", function () {
     var registrant = new createRegistrant("Anita", 10, false);
 
     assert.equal(
