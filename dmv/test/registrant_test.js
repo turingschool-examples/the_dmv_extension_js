@@ -32,7 +32,7 @@ describe("Registrant", function () {
     assert.equal(registrant.permit, true);
   });
 
-  it.skip("should by default have license data", function () {
+  it("should by default have license data", function () {
     var registrant = new createRegistrant("Anita", 18, true);
 
     assert.deepEqual(registrant.licenseData, {
