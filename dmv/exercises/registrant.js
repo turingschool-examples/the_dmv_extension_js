@@ -1,5 +1,5 @@
-class createRegistrant {
-  constructor(nameParameter, ageParameter, permitParameter = false) {
+class Registrant {
+  constructor(nameParameter, ageParameter, permitParameter) {
     this.name = nameParameter;
     this.age = ageParameter;
     this.permit = permitParameter;
@@ -9,6 +9,14 @@ class createRegistrant {
       renewed: false,
     };
   }
+}
+
+function createRegistrant(
+  nameParameter,
+  ageParameter,
+  permitParameter = false,
+) {
+  return new Registrant(nameParameter, ageParameter, permitParameter);
 }
 
 function earnPermit(registrantParameter) {
