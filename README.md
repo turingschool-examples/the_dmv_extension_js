@@ -1,6 +1,6 @@
 # The DMV - JS Extension
 
-You've built it in Ruby -- now let's take a look at what some of these objects would look like in JavaScript! 
+You've built it in Ruby -- now let's take a look at what some of these objects would look like in JavaScript!
 
 ## Installation Steps
 
@@ -26,3 +26,4 @@ You should see something like:
 
   0 passing (2ms)
   6 pending
+```
